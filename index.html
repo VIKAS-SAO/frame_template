@@ -55,7 +55,7 @@
      <a href="#top" class="bar_link w3-left w3-bar-item w3-mobile  w3-hover-green">YAMRAJ</a>
      <span class="w3-right w3-mobile ">
          <a href="#top" class="bar_link w3-bar-item   w3-mobile w3-hover-red">HOME</a>
-         <a href="#" class="bar_link w3-bar-item w3-button w3-mobile w3-hover-red">ABOUT</a>
+         <a href="#" class="bar_link w3-bar-item w3-button w3-mobile w3-hover-red" onclick="document.getElementById('about').style.display='block'">ABOUT</a>
          <a href="#services" class="bar_link w3-bar-item w3-button w3-mobile w3-hover-red">SERVICES</a>
          <a href="#contact" class="bar_link w3-bar-item w3-button w3-mobile w3-hover-red">CONTACT</a>
 
@@ -192,8 +192,8 @@
                 </div>
 
 <!--login modal-->
-                <div id="modal" class="w3-modal modal ">
-                    <div class="w3-modal-content" style="height:450px;width:700px;">
+                <div id="modal" class="w3-modal modal  ">
+                    <div class="w3-modal-content w3-card" style="height:450px;width:700px;">
                         <div class="w3-container-padding">
                             <div class="w3-red w3-text-white" style="font-size:30px;padding-left: 10px;height:60px;">
                                 FILL THE FORM
@@ -210,10 +210,26 @@
                             <input type="text" class="w3-input"  >
                             <input type="submit" value="SUBMIT" style="background-color: green;width:250px;">
 
-                             
+                             </div>
                         
-                    </div>
+                    
                 </div>
+                </div>
+                </div>
+
+                <!--modal box of about-->
+
+                <section id="about" class="w3-modal">
+                    <div class="w3-modal-content w3-container-padding w3-card-4 w3-center"  style="width:300px;">
+                        <div class="w3-red w3-text-white" style="height:50px;">
+                                 ABOUT US 
+                                <span class="w3-button w3-right" onclick="document.getElementById('about').style.display='none'">X</span>
+                        </div>
+                        <div class="w3-white w3-text-red">
+                            <p> Essays are commonly used as literary criticism, political manifestos, learned arguments, observations of daily life, recollections, and reflections of the author. Almost all modern essays are written in prose, but works in verse have been dubbed essays (e.g., Alexander Pope's An Essay on Criticism and An Essay on Man). While brevity usually defines an essay, voluminous works like John Locke's An Essay Concerning Human Understanding and Thomas Malthus's An Essay on the Principle of Population are counterexamples.
+                                    An essay is, generally,</p>
+                            </div>
+                </section> 
 
             
 
